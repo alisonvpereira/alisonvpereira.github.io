@@ -172,8 +172,7 @@ div.container2 div.front.bio {
 
 div.front.pic   {
     background-color: red;
-    /* animation-name: colours; */
-    /* animation-name: movepic; */
+    animation-name: movepic;
     animation-duration: 4s;
     animation-iteration-count: 1;
     
@@ -181,7 +180,7 @@ div.front.pic   {
     
 div.front.bio   {
     background-color: red;
-    /* animation-name: movebio; */
+    animation-name: movebio;
     animation-duration: 4s;
     animation-iteration-count: 1;
 }
@@ -195,18 +194,24 @@ div.front.bio   {
 
 
 @keyframes movepic {
-    from {left: 100%;} to {left: 0%;};
+    from {right: 19%;} to {right:0%;};
     0% {background-color: yellow ; }
-    33%   {background-color: yellow ; }
-    66%  {background-color: /*yellow ; */ rgb(187, 238, 139);}
+    28%   {background-color: yellow ; }
+    42%  {background-color: /*yellow ; */ rgb(187, 238, 139);}
+    56% {background-color: #D8DCD6; }
+    70%   {background-color: yellow ; }
+    84%  {background-color: /*yellow ; */ rgb(187, 238, 139);}
     100% {background-color: #D8DCD6; }
 }
 
 @keyframes movebio {
-    from {right: 100%;} to {right: 0%;};
+    from {left: 19%;} to {left: 0%;};
     0% {background-color: yellow ; }
-    33%   {background-color: yellow ; }
-    66%  {background-color: /*yellow ; */ rgb(187, 238, 139);}
+    28%   {background-color: yellow ; }
+    42%  {background-color: /*yellow ; */ rgb(187, 238, 139);}
+    56% {background-color: #D8DCD6; }
+    70%   {background-color: yellow ; }
+    84%  {background-color: /*yellow ; */ rgb(187, 238, 139);}
     100% {background-color: #D8DCD6; }
 }
     
@@ -215,8 +220,10 @@ div.front.bio   {
 div.container2 div.front.pic img {
     width: 100%;
     object-fit: cover;
+}
 
-
+div.container3 {
+    border: 2px solid blue;
 }
 
 
@@ -233,7 +240,7 @@ footer .footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: auto;    
+    
   }
 
   .icons a {
@@ -241,6 +248,7 @@ footer .footer {
     padding: 10px;
     color: white;
     vertical-align: middle;
+
   }
 
   .icons a img {
