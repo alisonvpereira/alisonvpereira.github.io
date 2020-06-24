@@ -247,33 +247,23 @@ footer {
   }
 
 div.containertest    {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;    
     align-items: center;
-    padding: 1%;
+    /* padding: 2%; */
+    margin-bottom: 2%;
 }
 
-.containertest::after {
-    background-color: #19234E;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.8;
-}
+
 
 
 div.itemlong {
     width: 100%;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    padding: 1%;
+    padding: 1.8%;
     margin-bottom: 1%;
     background-color: #f1f1f1cc ;
  
@@ -284,10 +274,10 @@ div.itemlong {
 
 div.item {
     /* border: 1px solid red; */
-    width: 31%;
+    width: 29%;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    padding: 1%;
+    padding: 1.8%;
     margin-bottom: 1%;
     background-color: #f1f1f1cc ;
 }
