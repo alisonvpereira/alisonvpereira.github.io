@@ -254,6 +254,7 @@ div.containertest    {
     align-items: center;
     /* padding: 2%; */
     margin-bottom: 2%;
+    margin: 1%;
 }
 
 
@@ -280,4 +281,9 @@ div.item {
     padding: 1.8%;
     margin-bottom: 1%;
     background-color: #f1f1f1cc ;
+}
+@media (max-width: 600px) {
+    div.containertest { margin-bottom: 5%; }
+    div.itemlong {margin: 1%; padding:5%}
+    div.item { width: 100%;margin: 1%;padding:5%}
 }
