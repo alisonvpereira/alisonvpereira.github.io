@@ -158,9 +158,33 @@ div.container2 div.front.pic {
     animation-name: movepic;
     animation-duration: 4s;
     animation-iteration-count: 1;
-    
-
 }
+
+
+/*sytling for pages under construction*/
+    /*Projects & Contact*/
+        .clock img {
+            /* border: 5px solid white; */
+            height: 430px ;    
+            object-fit: cover;
+        }
+
+        .csoon {
+            /* border: 5px solid white; */
+            z-index: 3;
+            position: absolute;
+            top: 25%;
+            color: white;
+            font-size: calc(1.5vw + 1vh + 2vmin);
+            text-align: center;
+            opacity: 0.5;
+            font-family: monospace;
+            font-weight: normal;
+            height: 40%;
+            display: flex;   
+        }
+
+
 
 
 div.container2 div.front.bio {
@@ -256,12 +280,13 @@ div.containertest    {
 
 
 div.itemlong {
-    width: 45%;
+    width: 99%;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     padding: 1.8%;
     margin-bottom: 1%;
     background-color: #f1f1f1cc ;
+    box-shadow: 10px 10px 10px #8F8CE7;
  
 
 }
@@ -276,6 +301,8 @@ div.item {
     padding: 1.8%;
     margin-bottom: 1%;
     background-color: #f1f1f1cc ;
+    box-shadow: 10px 10px 10px #8F8CE7;
+    
     
     
 }
