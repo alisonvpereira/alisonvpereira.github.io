@@ -320,6 +320,7 @@ form {
     justify-content: center;
     align-items: center;
     padding: 5px;
+    /* border: 1px solid    red;  */
     
 }
 
@@ -327,6 +328,7 @@ form {
     flex-basis: 150px;
     font-size: 22px;
     color: #f1f1f1cc;
+    border: 1px solid    red; 
 }
 
 .form-item input,
@@ -372,6 +374,9 @@ form {
     div.containertest { padding-bottom: 10%; }
     div.itemlong {width: 100%;margin: 1%;padding:5%}
     div.item { width: 100%;margin: 1%;padding:5%}
+    form {width:100%;margin: 0 0; }
+
+    
 }
 
 @media (min-width:600px) and (max-width:800px) {
