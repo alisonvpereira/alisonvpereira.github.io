@@ -334,26 +334,28 @@ form {
 .form-item input,
 .form-item textarea {
     flex-basis: 50%;
-    border: 2px solid #FDDC5C;
+    border: 5px solid #f1f1f1cc;
 }
 
 .form-item input:hover,
 .form-item textarea:hover {
-    border: 2px solid #FA4224;
+    border: 5px solid yellow;
 }
 
 .form-item input,
 .form-item textarea,
 .form-item button {
-    border: 2px solid #FDDC5C;
+    /* border: 2px solid #FDDC5C; */
     background-color: #FFF;
     padding: 5px;
     font-size: 18px;
+    border-radius: 5px;
 }
 
 .form-item button:hover {
-    border: 2px solid #FA4224;
-    background-color: #FA4224;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    background-color: #19234E;
     color: #FFF;
 }
 
