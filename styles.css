@@ -39,16 +39,18 @@ header {
     vertical-align: middle;
 }
 
+.Headcontainer1 div#col1 a {
+    display: flex;
+    text-decoration: none;
+    height: 75px;
+}
 
 .Headcontainer1 div#col1 h1{
     /* border: 1px solid brown; */
     font-weight: normal;
     /* font-family: 'Arial Narrow'; */
     font-size: calc(1vw + 3vh + 1vmin);
-    /* margin-top: 8px; */
-   
-    
-    
+    /* margin-top: 8px; */    
 }
 
 .Headcontainer1 div#col1 h1.lwr {
@@ -312,7 +314,8 @@ div.item {
 @media (max-width: 600px) {
     div.Headcontainer1 { margin-left: 0px; display: flex; flex-wrap: wrap; justify-content: center; }
     div.Headcontainer1 div#col1{ text-align: center; }
-    div.Headcontainer1  div#col2 a {padding-top:0; padding-right:5px;padding-left:5px;width: 100%;}    
+    .Headcontainer1 div#col1 a {height: 50px;}
+    div.Headcontainer1  div#col2 a {padding-top:0; padding-right:5px;padding-left:5px;width: 100%; }
     div.container2 div.front.pic {width:80%; padding: 5%;animation-name: none;}
     div.container2 div.front.bio {width:80%; padding: 5%;animation-name: none;}
     div.containertest { padding-bottom: 10%; }
