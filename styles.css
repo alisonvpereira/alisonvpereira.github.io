@@ -4,11 +4,13 @@
     padding: 0;
     margin: 0;
     /* border: 1px solid red; */
+ 
 
 }
 
 html, body { width: 100%; /*height: 600px;*/ }
 
+/********** header start **********/
 header {
     position: sticky;
     top: 0;
@@ -16,7 +18,6 @@ header {
     background-color: white;
     padding: 10px;   
 }
-
 
 .Headcontainer1 {
     /* border: 1px solid green; */
@@ -27,9 +28,6 @@ header {
     height: max-content;
     float: top;  
 }
-
-
-
 
 .Headcontainer1 div#col1{
     /* border: 1px solid red; */
@@ -84,11 +82,11 @@ header {
     /* background-color: #19234E; */
     opacity: 0.3;
     border-radius: 5px;
-  }
+}
+/********** header end **********/
 
-
-
-
+/********** index page start **********/
+  /***** background start *****/
 div.container2 {
     box-sizing: border-box;
     width: 100%;
@@ -106,6 +104,7 @@ div.container2 {
     position: relative;
     z-index: 1;
 }
+
 .container2::after {
     background-color: #19234E;
     content: "";
@@ -118,8 +117,6 @@ div.container2 {
     z-index: -1;
     opacity: 0.8;
 }
-
-
 
  div.container2 img#back {
     /* border: 3px solid brown; */
@@ -134,10 +131,10 @@ div.container2 {
     position: absolute;
     z-index: 1;
 }
+    /***** background end *****/
 
 
-
-
+    /***** bio start *****/
 div.container2 div.front {
     width: 100%;
     /* border: 1px solid salmon; */
@@ -162,9 +159,8 @@ div.container2 div.front.pic {
     animation-iteration-count: 1;
 }
 
-
-/*sytling for pages under construction*/
-    /*Projects & Contact*/
+    /***** sytling for pages under construction start *****/
+        /***Projects***/
         .clock img {
             /* border: 5px solid white; */
             height: 430px ;    
@@ -185,9 +181,7 @@ div.container2 div.front.pic {
             height: 40%;
             display: flex;   
         }
-
-
-
+    /***** sytling for pages under construction end *****/
 
 div.container2 div.front.bio {
     max-width: 400px;
@@ -204,11 +198,8 @@ div.container2 div.front.bio {
     /* text-size-adjust: auto; */
     animation-name: movebio;
     animation-duration: 4s;
-  animation-iteration-count: 1;
-
-
+    animation-iteration-count: 1;
 }
-
 
 @keyframes movepic {
     from {right: 450px;} to {right:0px;};
@@ -218,7 +209,6 @@ div.container2 div.front.bio {
     75%  {background-color: yellow;}
     100%   {background-color: #f1f1f1cc ;}
 }
-
 
 @keyframes movebio {
     from {left: 450px;} to {left: 0px;};
@@ -230,44 +220,83 @@ div.container2 div.front.bio {
 }
     
 
-
-
 div.container2 div.front.pic img {
     width: 100%;
     object-fit: cover;
 }
+    /***** bio end *****/
 
-footer {
-    padding-bottom: 10px;
-    padding-top: 5px;
-    text-align: center;
-    background: white;
-    margin-top: 10px;    
-    position: fixed;
-    /* left: 0; */
-    bottom: 0;
-    width: 100%;    
+    /***** carousel start *****/
+.carousel {display: none;}
+
+.container3 {
+    width: 33%;
+    position: relative;
+    /* left: 25%; */
+    margin:auto;
+    margin-top: 0.5%;
+    /* bottom: 0; */
+    /* border:1px solid blue;     */
+    height: max-content;
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1cc ;
+    box-shadow: 0px 10px 10px #8F8CE7;
+    border-radius: 5px;
     z-index: 3;
-  }
-
-  .icons a {
-    /* border: 1px solid red; */
     padding: 10px;
-    color: white;
-    vertical-align: middle;
   }
 
-  .icons a img {
-    vertical-align: middle;
-    /* border: 1px solid white; */
-    width: 20px;
-    opacity: 0.5;
+.testimonials {
+    color: blue;
+    font-size: 15px;
+    padding: 10px;
+    margin: auto;
+    /* position: absolute; */
+    /* bottom: 8px; */
+    width: 98%;
+    text-align: center;
+    /* border:1px solid red; */
+    /* background-color:#f1f1f1cc;
+    border-radius: 5px; */
+    z-index: 3;
+}
+
+.bullet {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: /*inline-block;*/ none;
+    transition: background-color 0.6s ease;
   }
 
-  .icons a img:hover {
-      opacity: 1;
+  .active {
+    background-color: #717171;
   }
 
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+    /***** carousel end *****/
+/********** index page end **********/
+  
+
+/********** testimonial page start **********/
 div.containertest    {
     /* border: 1px solid red; */
     display: flex;
@@ -279,9 +308,6 @@ div.containertest    {
     min-height: max-content;
 }
 
-
-
-
 div.itemlong {
     width: 99%;
     border-top-right-radius: 50px;
@@ -291,8 +317,6 @@ div.itemlong {
     background-color: #f1f1f1cc ;
     box-shadow: 10px 10px 10px #8F8CE7;
 }
-
-
 
 div.item {
     /* border: 1px solid red; */
@@ -304,15 +328,15 @@ div.item {
     background-color: #f1f1f1cc ;
     box-shadow: 10px 10px 10px #8F8CE7;
 }
+/********** testimonial page end **********/
 
-/*Contact form*/
+/********** contact form start **********/
 form {
     margin: 50px auto;
     width: 90%;
     /* border: 1px solid    red; */
     height: 390px;
     z-index: 3;
-  
 }
 
 .form-item {
@@ -321,7 +345,6 @@ form {
     align-items: center;
     padding: 5px;
     /* border: 1px solid    red;  */
-    
 }
 
 .form-item label {
@@ -362,9 +385,43 @@ form {
 .form-item button {
     width: 100px;
 }
+/********** contact form end **********/
 
 
+/********** footer start **********/
+footer {
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-align: center;
+    background: white;
+    margin-top: 10px;    
+    position: fixed;
+    /* left: 0; */
+    bottom: 0;
+    width: 100%;    
+    z-index: 3;
+  }
 
+  .icons a {
+    /* border: 1px solid red; */
+    padding: 10px;
+    color: white;
+    vertical-align: middle;
+  }
+
+  .icons a img {
+    vertical-align: middle;
+    /* border: 1px solid white; */
+    width: 20px;
+    opacity: 0.5;
+  }
+
+  .icons a img:hover {
+      opacity: 1;
+  }
+/********** footer end **********/
+
+/********** media queries start **********/
 @media (max-width: 600px) {
     div.Headcontainer1 { margin-left: 0px; display: flex; flex-wrap: wrap; justify-content: center; }
     div.Headcontainer1 div#col1{ text-align: center; }
@@ -379,8 +436,7 @@ form {
     form {width:100%;margin: 0 0; }
     .form-item label {flex-basis: 20%;font-size: 13px;}
     .form-item input, .form-item textarea, .form-item button {font-size: 13px;}
-
-    
+    div.container3 {display: none;}
 }
 
 @media (min-width:600px) and (max-width:800px) {
@@ -403,5 +459,4 @@ form {
     div.container2 div.front.bio {width:380px; height: 380px; padding:2%;}
     .clock img {height: 380px ;}
 }
-
-
+/********** media queries end **********/
