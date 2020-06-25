@@ -375,6 +375,8 @@ form {
     div.itemlong {width: 100%;margin: 1%;padding:5%}
     div.item { width: 100%;margin: 1%;padding:5%}
     form {width:100%;margin: 0 0; }
+    .form-item label {flex-basis: 20%;font-size: 13px;}
+    .form-item input, .form-item textarea, .form-item button {font-size: 13px;}
 
     
 }
