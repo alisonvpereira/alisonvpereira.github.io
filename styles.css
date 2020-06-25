@@ -193,7 +193,8 @@ div.container2 div.front.bio {
     max-width: 400px;
     border: 5px solid white;
     padding: 2%;
-    background-color: rgba(241, 241, 241, 0.8);
+    background-color: #f1f1f1cc;
+    /* font-size: calc(0.5vw + 0.5vh + 1vmin); */
     /* border-left: 0px;
     margin-left: 5px; */
     display: inline-flex;
@@ -210,7 +211,7 @@ div.container2 div.front.bio {
 
 
 @keyframes movepic {
-    from {right: 100%;} to {right:0%;};
+    from {right: 450px;} to {right:0px;};
     0%   {background-color: white ; }
     25% {background-color: yellow; }
     50%   {background-color: white ;}
@@ -220,7 +221,7 @@ div.container2 div.front.bio {
 
 
 @keyframes movebio {
-    from {left: 100%;} to {left: 0%;};
+    from {left: 450px;} to {left: 0px;};
     0%   {background-color: white ; }
     25% {background-color: yellow; }
     50%   {background-color: white ;}
@@ -289,8 +290,6 @@ div.itemlong {
     margin-bottom: 1%;
     background-color: #f1f1f1cc ;
     box-shadow: 10px 10px 10px #8F8CE7;
- 
-
 }
 
 
@@ -304,9 +303,6 @@ div.item {
     margin-bottom: 1%;
     background-color: #f1f1f1cc ;
     box-shadow: 10px 10px 10px #8F8CE7;
-    
-    
-    
 }
 
 
@@ -316,16 +312,33 @@ div.item {
     div.Headcontainer1 div#col1{ text-align: center; }
     .Headcontainer1 div#col1 a {height: 50px;}
     div.Headcontainer1  div#col2 a {padding-top:0; padding-right:5px;padding-left:5px;width: 100%; }
-    div.container2 div.front.pic {width:80%; padding: 5%;animation-name: none;}
-    div.container2 div.front.bio {width:80%; padding: 5%;animation-name: none;}
+    div.container2 div.front.pic {width:250px; height: max-content; padding: 5%;animation-name: none;}
+    div.container2 div.front.bio {width:250px; height: max-content;  padding: 5%;animation-name: none; font-size: calc(0.5vw + 1vh + 0.5vmin);}
+    .clock img {height: 250px ;}
     div.containertest { padding-bottom: 10%; }
     div.itemlong {width: 100%;margin: 1%;padding:5%}
     div.item { width: 100%;margin: 1%;padding:5%}
 }
 
-/* @media (min-width:600px) and (max-width:1024px) {
-    div.container2 div.front.pic {width:35%;  padding: 5%;}
-    div.container2 div.front.bio {width:35%;  padding: 5%;}
-} */
+@media (min-width:600px) and (max-width:800px) {
+    div.container2 div.front {width:100%;  height: max-content; }
+    div.container2 div.front.pic {width:200px; height: 200px;padding:2% ;}
+    div.container2 div.front.bio {width:200px; height: 200px; padding:2%;font-size: calc(0.5vw + 0.2vh + 0.5vmin);}
+    .clock img {height: 200px ;}
+}
+
+@media (min-width:800px) and (max-width:1024px) {
+    div.container2 div.front {width:100%;  height: max-content; }
+    div.container2 div.front.pic {width:280px; height: 280px;padding:2% ;}
+    div.container2 div.front.bio {width:280px; height: 280px; padding:2%;font-size: calc(0.5vw + 0.5vh + 0.4vmin);}
+    .clock img {height: 280px ;}
+}
+
+@media (min-width:1024px) and (max-width:1440px) {
+    div.container2 div.front {width:100%;  height: max-content; }
+    div.container2 div.front.pic {width:380px; height: 380px;padding:2% ;}
+    div.container2 div.front.bio {width:380px; height: 380px; padding:2%;}
+    .clock img {height: 380px ;}
+}
 
 
