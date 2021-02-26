@@ -310,23 +310,25 @@ div.containertest    {
 
 div.itemlong {
     width: 99%;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    /*border-top-right-radius: 50px;*/
+    /*border-bottom-left-radius: 50px;*/
+    border-radius: 10px;
     padding: 1.8%;
     margin-bottom: 1%;
     background-color: #f1f1f1cc ;
-    box-shadow: 10px 10px 10px #8F8CE7;
+    box-shadow: 3px 3px 3px #8F8CE7;
 }
 
 div.item {
     /* border: 1px solid red; */
     width: 29%;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    /*border-top-right-radius: 50px;*/
+    /*border-bottom-left-radius: 50px;*/
+    border-radius: 10px;
     padding: 1.8%;
     margin-bottom: 1%;
     background-color: #f1f1f1cc ;
-    box-shadow: 10px 10px 10px #8F8CE7;
+    box-shadow: 3px 3px 3px #8F8CE7;
 }
 /********** testimonial page end **********/
 
