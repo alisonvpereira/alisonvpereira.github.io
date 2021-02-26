@@ -17,5 +17,5 @@ function startScroll() {
   }
   scroll[scrollIndex-1].style.display = "block";  
   bullet[scrollIndex-1].className += " active";
-  setTimeout(startScroll, 20000); // Change image every 20 seconds
+  setTimeout(startScroll, 20000); // Change image every 20 seconds 
 }
